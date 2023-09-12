@@ -2,7 +2,7 @@
 Wrapper for spray tools that are awesome, but can't count/delay to save their lives
 
 <p align="center">
-  <img width=400px src="resources/logo.png" />
+  <img width=400px src="resources/logo.jpg" />
 </p>
 
 
