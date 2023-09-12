@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     print(Fore.YELLOW + banner + Style.RESET_ALL)
 
-    parser = argparse.ArgumentParser(description="Read and print lines from a text file with optional parameters.")
+    parser = argparse.ArgumentParser(description="Spray Wrapper v1.0")
     parser.add_argument("-u", "--url", help="Target URL/IP/IP CIDR range to spray if tool requires it (optional).")
     parser.add_argument("-p", "--passwords", required=True, help="Password file to spray.")
     parser.add_argument("-e", "--emails", required=True, help="Emails/Usernames file to spray.")
