@@ -61,7 +61,7 @@ if __name__ == "__main__":
     parser.add_argument("-e", "--emails", required=True, help="Emails/Usernames file to spray.")
     parser.add_argument("-t", "--tool", required=True, help="Tool to use (trevorspray/o365spray).")
     parser.add_argument("-a", "--attempts", type=int, default=2, help="The number of passwords to to try and at a time (default is 2).")
-    parser.add_argument("-d", "--delay", type=int, default=300, help="The delay in seconds between each reading of lines (default is 300).")
+    parser.add_argument("-d", "--delay", type=int, default=300, help="The delay in seconds between each number of attempts (default is 300).")
     parser.add_argument("-x", "--proxy", help="HTTP(S) Proxy to feed to command if supported (optional)")
     args = parser.parse_args()
     
